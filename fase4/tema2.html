@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tema2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu-area a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            background-color: lightblue;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        .menu-area a:hover {
+            background: tomato;
+            color: #fff;
+
+        }
+
+        .menu-area ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-area li {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-area li:hover .dropdown-1>li {
+            top: 0;
+            display: block;
+        }
+
+        .dropdown-1 li {
+            display: none;
+            position: relative;
+        }
+
+        .dropdown-1 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .dropdown-1 li:hover {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logotipo UNAD">
+        <h1>Portal web para el aprendizaje de Etiquetas Básicas de HTML, Atributos y Valores</h1>
+        
+    </header>
+    <nav>
+        <nav class="menu-area">
+            <ul>
+                <li> <a href="index.html">Inicio</a> </li>
+                <li><a href="#">Temas</a>
+                    <ul class="dropdown-1">
+                        <li><a href="tema1.html">Etiquetas Basicas en HTML</a></li>
+                        <li><a href="tema2.html">Atributos-Valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos</a>
+                    <ul class="dropdown-1">
+                        <li> <a href="audiovisual1.html">Recurso 1</a> </li>
+                        <li><a href="audiovisual2.html">Recurso 2</a></li>
+                    </ul>
+                <li><a href="#">Aprendizaje</a>
+                        <ul class="dropdown-1">
+                            <li> <a href="aprendizaje1.html">Aprendizaje 1</a> </li>
+                            <li><a href="#">Actividad 2</a></li>
+                        </ul>
+                </li>
+                </li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <article>
+                
+                <iframe width="930" height="600" src="pdf/tema2.pdf" frameborder="0"></iframe>
+                <h6>Etiquetas y atributos HTMLs (2021). https://www.htmlquick.com/es/tutorials/html-tags-and-attributes/2.html#attributes
+                <h6>Atributos comunes en HTML. Tenerife-Canarias (2020). https://lenguajehtml.com/html/introduccion/atributos-comunes-html/
+            </article>
+        </section>
+        <aside>
+
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="550" height="630" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        </aside>
+    </div>
+    <footer>
+        <h6>Copyright © 2021 | Leonardo Daza</h6>
+        <h6>Contacto:3012079258</h6>
+        <h6>Correo Electronico:leonardodaza83@gmail.com</h6>
+    </footer>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
